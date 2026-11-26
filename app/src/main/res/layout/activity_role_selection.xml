@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roleselectionbackground"
+    tools:context=".activity.RoleSelectionActivity">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/app_logo"
+        android:contentDescription="App Logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/appName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80dp"/>
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speech Bridge"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/md_theme_primary"
+        app:layout_constraintTop_toBottomOf="@id/appLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Speech Therapist Button -->
+    <Button
+        android:id="@+id/btnTherapist"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Speech Therapist"
+        android:textSize="18sp"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/appName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/md_theme_primary"/>
+
+    <!-- Patient Button -->
+    <Button
+        android:id="@+id/btnPatient"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Patient"
+        android:textSize="18sp"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/btnTherapist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/md_theme_primary"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

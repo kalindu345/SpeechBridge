@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Therapist Name -->
+        <TextView
+            android:id="@+id/txtTherapistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr. Therapist Name"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 Mar 2026"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Time -->
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00 AM - 11:00 AM"/>
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs. 1200"
+            android:textStyle="bold"
+            android:textColor="@color/md_theme_primary"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Type -->
+        <TextView
+            android:id="@+id/txtType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online"
+            android:textStyle="italic"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Online Link -->
+        <TextView
+            android:id="@+id/txtLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join Meeting"
+            android:textColor="@color/md_theme_primary"
+            android:layout_marginTop="6dp"
+            android:visibility="gone"/>
+
+        <!-- Physical Location -->
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colombo"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/md_theme_primary"
+            android:visibility="gone"/>
+
+        <!-- Session Status -->
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="booked"
+            android:textStyle="italic"
+            android:layout_marginTop="6dp"/>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

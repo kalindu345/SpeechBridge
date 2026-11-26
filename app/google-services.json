@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "20297581101",
+    "project_id": "speech-bridge-13438",
+    "storage_bucket": "speech-bridge-13438.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20297581101:android:0323a4639e9bc0c7a46ea4",
+        "android_client_info": {
+          "package_name": "lk.kalindu.speechbridge"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtS1zuqc0seynoE9EAJ0VjTbjjE3U5veY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

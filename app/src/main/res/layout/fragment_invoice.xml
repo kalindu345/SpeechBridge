@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Invoice"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Invoice Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/txtInvoiceId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Invoice ID: "
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/txtTherapist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Therapist: "
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/txtPatient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Patient: "
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/txtSessionDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Session Date: "
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/txtAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Amount: "
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status: Paid"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:layout_marginTop="6dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnSaveInvoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Invoice"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/md_theme_primary"
+        android:textColor="@android:color/white"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you have any inquiries regarding payments,"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="please contact us"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnContactNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Now"
+            android:backgroundTint="@color/md_theme_primaryContainer_mediumContrast"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>

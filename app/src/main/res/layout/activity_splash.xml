@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activity.SplashActivity">
+
+    <!-- Main vertical layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="24dp"
+            android:text="Speech Bridge"
+            android:textAllCaps="true"
+            android:textColor="@color/md_theme_primary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/speechIllustration"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:src="@drawable/speechtherapy"
+            android:contentDescription="Speech Illustration"
+            android:layout_marginBottom="32dp"/>
+
+
+        <ProgressBar
+            android:id="@+id/splashProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="10dp"
+            android:indeterminate="true"
+            android:progressTint="@color/md_theme_primary"
+            android:visibility="invisible"
+            android:layout_marginBottom="24dp"/>
+
+
+        <TextView
+            android:id="@+id/footerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© All rights reserved"
+            android:textSize="17sp"
+            android:textColor="@color/md_theme_secondary"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/side_nav_group_main"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/side_nav_mySessions"
+            android:checkable="true"
+            android:icon="@drawable/session"
+            android:title="My Sessions" />
+        <item
+            android:id="@+id/side_nav_therapists"
+            android:checkable="true"
+            android:icon="@drawable/therapists"
+            android:title="Therapists"
+            />
+<!--        <item-->
+<!--            android:id="@+id/side_nav_profile"-->
+<!--            android:checkable="true"-->
+<!--            android:icon="@drawable/profile"-->
+<!--            android:title="Profile"-->
+<!--            />-->
+        <item
+            android:id="@+id/side_nav_complaints"
+            android:checkable="true"
+            android:icon="@drawable/complaints"
+            android:title="Complaints"
+            />
+    </group>
+
+    <group android:id="@+id/side_nav_group_auth">
+
+        <item
+            android:id="@+id/side_nav_logout"
+            android:icon="@drawable/logout"
+            android:title="logout"
+            />
+    </group>
+
+</menu>

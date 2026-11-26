@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="6dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- DATE + PRICE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- DATE -->
+            <TextView
+                android:id="@+id/sessionDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="20 Mar 2026"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <!-- PRICE -->
+            <TextView
+                android:id="@+id/sessionPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 2500"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_price_tag"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"/>
+        </LinearLayout>
+
+        <!-- TIME -->
+        <TextView
+            android:id="@+id/sessionStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08:00 PM"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- LOCATION (PHYSICAL) -->
+        <TextView
+            android:id="@+id/sessionLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📍 Colombo"
+            android:visibility="gone"
+            android:layout_marginTop="6dp"/>
+
+        <!-- ONLINE LINK -->
+        <TextView
+            android:id="@+id/sessionLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔗 Join Meeting"
+            android:textColor="@color/md_theme_primary"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginTop="6dp"/>
+
+        <!-- STATUS + BUTTON -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/sessionStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ONLINE"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_status"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sessionBookingBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book"
+                android:textSize="12sp"
+                app:cornerRadius="50dp"
+                android:paddingHorizontal="16dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
